@@ -1,0 +1,19 @@
+#startDate:valid,
+textarea:valid{
+    border-color:green;
+}
+
+#startDate:invalid,
+textarea:invalid{
+    border-color:red;
+}
+
+#devolutionDate:valid,
+textarea:valid{
+    border-color:green;
+}
+
+#devolutionDate:invalid,
+textarea:invalid{
+    border-color:red;
+}

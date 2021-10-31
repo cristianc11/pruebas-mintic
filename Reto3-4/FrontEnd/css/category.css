@@ -1,0 +1,19 @@
+#name:valid,
+textarea:valid{
+    border-color:green;
+}
+
+#name:invalid,
+textarea:invalid{
+    border-color:red;
+}
+
+#description:valid,
+textarea:valid{
+    border-color:green;
+}
+
+#description:invalid,
+textarea:invalid{
+    border-color:red;
+}

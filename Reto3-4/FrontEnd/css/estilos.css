@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(221, 221, 221);
+}
+
+#titulo{
+    left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+}
+
+#info{
+    margin-top: 50px;
+}

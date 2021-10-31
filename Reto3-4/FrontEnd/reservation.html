@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="/css/estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/reservation.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/reservation.js"></script>
+    <script type="text/javascript" src="js/quadbike.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a3caf1">
+        <div class="container-fluid">
+            <a><img id="logo" src="/img/logo.png" alt="logo"></a>
+            <a href="#" class="navbar-brand"><b>4XBike</b></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="category.html" class="nav-item nav-link">Categorias</a>
+                    <a href="quadbike.html" class="nav-item nav-link">Cuatrimotos</a>
+                    <a href="client.html" class="nav-item nav-link">Clientes</a>
+                    <a href="message.html" class="nav-item nav-link">Mensajes</a>
+                    <a href="reservation.html" class="nav-item nav-link active">Reservaciones</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="info">
+        <div class="p-5 my-4 bg-light rounded-3">
+            <h1>Consultar Reservaciones</h1>
+            <p class="lead">
+                <table id="tabla" class="table"></table>
+                <script type="text/javascript">
+                window.onload = autoInicioInformacionReservation();
+                </script>
+                </div>
+                <div class="row">
+                <div class="col-md-6">
+                <div class="p-5 my-4 bg-light rounded-3">
+                    <hr>
+                    <h1>Crear Reservacion</h1>
+                <form>
+                    <div class="col-4 mb-3">
+                        <label class="form-label">Fecha Inicio</label>
+                        <input type="date" class="form-control" id="startDate" placeholder="Fecha Inicio" required>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <label class="form-label">Fecha Entrega</label>
+                        <input type="date" class="form-control" id="devolutionDate" placeholder="Fecha Entrega" required>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <label class="form-label">Cliente</label>
+                        <select id="select-client" class="form-select"><script>traerLlaveClient()</script></select>
+                    </div>
+                    <div class="col-3 mb-3">
+                        <label class="form-label">Cuatrimoto</label>
+                        <select id="select-quadbike" class="form-select"><script>traerLlaveQuadbike()</script></select>
+                    </div>
+                </form>
+                <button onclick="guardarInformacionReservation()" class="btn btn-primary">Crear</button>
+                <hr>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="p-5 my-4 bg-light rounded-3">
+            <hr>
+            <h1>Actualizar Reservacion</h1>
+        <form>
+            <div class="col-4 mb-3">
+                <label class="form-label">Fecha Inicio</label>
+                <input type="date" class="form-control" id="actuastartDate" placeholder="Fecha Inicio" required>
+            </div>
+            <div class="col-4 mb-3">
+                <label class="form-label">Fecha Entrega</label>
+                <input type="date" class="form-control" id="actuadevolutionDate" placeholder="Fecha Entrega" required>
+            </div>
+            <div class="col-4 mb-3">
+                <label class="form-label">Status</label>
+                <select class="form-select" id="select-status">
+                    <option>Programado</option>
+                    <option>Cancelado</option>
+                    <option>Realizado</option>
+                </select>
+            </div>
+        </form>
+        <hr>
+</div>
+</div>
+    </div>
+</div>
+</body>
+</html>
