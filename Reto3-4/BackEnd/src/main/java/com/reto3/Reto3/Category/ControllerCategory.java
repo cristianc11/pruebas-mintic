@@ -49,7 +49,7 @@ public class ControllerCategory {
         return services.update(category);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") int categoryId){
         return services.deleteCategory(categoryId);

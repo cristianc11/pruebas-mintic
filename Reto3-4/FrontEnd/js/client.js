@@ -119,7 +119,7 @@ function borrarInformacionClient(idElemento){
         idClient:idElemento,
     };
     $.ajax({
-        url:"http://localhost:8080/api/Client/delete/"+idElemento,
+        url:"http://localhost:8080/api/Client/"+idElemento,
         type:"DELETE",
         data:JSON.stringify(myData),
         contentType:"application/json; charset=utf-8",

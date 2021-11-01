@@ -124,7 +124,7 @@ function borrarInformacionQuadbike(idElemento){
         id:idElemento,
     };
     $.ajax({
-        url:"http://localhost:8080/api/Quadbike/delete/"+idElemento,
+        url:"http://localhost:8080/api/Quadbike/"+idElemento,
         type:"DELETE",
         data:JSON.stringify(myData),
         contentType:"application/json; charset=utf-8",

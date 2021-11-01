@@ -108,7 +108,7 @@ function borrarInformacionCategory(idElemento){
         id:idElemento,
     };
     $.ajax({
-        url:"http://localhost:8080/api/Category/delete/"+idElemento,
+        url:"http://localhost:8080/api/Category/"+idElemento,
         type:"DELETE",
         data:JSON.stringify(myData),
         contentType:"application/json; charset=utf-8",

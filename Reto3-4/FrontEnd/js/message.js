@@ -111,7 +111,7 @@ function borrarInformacionMessage(idElemento){
         idMessage:idElemento,
     };
     $.ajax({
-        url:"http://localhost:8080/api/Message/delete/"+idElemento,
+        url:"http://localhost:8080/api/Message/"+idElemento,
         type:"DELETE",
         data:JSON.stringify(myData),
         contentType:"application/json; charset=utf-8",

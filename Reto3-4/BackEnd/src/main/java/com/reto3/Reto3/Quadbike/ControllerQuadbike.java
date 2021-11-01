@@ -49,7 +49,7 @@ public class ControllerQuadbike {
         return services.update(quadbike);
     }
     
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id")int quadbikeid){
         return services.deleteQuadbike(quadbikeid);
