@@ -1,0 +1,39 @@
+#email:valid,
+textarea:valid{
+    border-color:green;
+}
+
+#email:invalid,
+textarea:invalid{
+    border-color:red;
+}
+
+#password:valid,
+textarea:valid{
+    border-color:green;
+}
+
+#password:invalid,
+textarea:invalid{
+    border-color:red;
+}
+
+#name:valid,
+textarea:valid{
+    border-color:green;
+}
+
+#name:invalid,
+textarea:invalid{
+    border-color:red;
+}
+
+#age:valid,
+textarea:valid{
+    border-color:green;
+}
+
+#age:invalid,
+textarea:invalid{
+    border-color:red;
+}
