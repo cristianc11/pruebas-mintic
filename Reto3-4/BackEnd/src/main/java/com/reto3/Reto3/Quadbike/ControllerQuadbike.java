@@ -33,8 +33,8 @@ public class ControllerQuadbike {
     }
    
     @GetMapping("/{id}")
-    public Optional <Quadbike> getQuadbike(@PathVariable("id") int id){
-        return services.getQuadbike(id);
+    public Optional <Quadbike> getQuadbike(@PathVariable("id") int quadbikeid){
+        return services.getQuadbike(quadbikeid);
     }
     
     @PostMapping("/save")

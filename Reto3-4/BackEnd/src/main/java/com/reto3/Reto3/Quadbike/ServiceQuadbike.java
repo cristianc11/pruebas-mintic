@@ -18,8 +18,8 @@ public class ServiceQuadbike {
         return metodosCrud.getAll();
     }
     
-    public Optional<Quadbike>getQuadbike(int id){
-        return metodosCrud.getQuadbike(id);
+    public Optional<Quadbike>getQuadbike(int quadbikeid){
+        return metodosCrud.getQuadbike(quadbikeid);
     }
     
     public Quadbike save(Quadbike quadbike){
