@@ -33,8 +33,8 @@ public class ControllerQuadbike {
     }
    
     @GetMapping("/{id}")
-    public Optional <Quadbike> getQuadbike(@PathVariable("id") int quadbikeid){
-        return services.getQuadbike(quadbikeid);
+    public Optional <Quadbike> getQuadbike(@PathVariable("id") int quadbikeId){
+        return services.getQuadbike(quadbikeId);
     }
     
     @PostMapping("/save")
@@ -51,7 +51,7 @@ public class ControllerQuadbike {
     
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public boolean delete(@PathVariable("id")int quadbikeid){
-        return services.deleteQuadbike(quadbikeid);
+    public boolean delete(@PathVariable("id")int quadbikeId){
+        return services.deleteQuadbike(quadbikeId);
     }
 }

@@ -18,8 +18,8 @@ public class ServiceQuadbike {
         return metodosCrud.getAll();
     }
     
-    public Optional<Quadbike>getQuadbike(int quadbikeid){
-        return metodosCrud.getQuadbike(quadbikeid);
+    public Optional<Quadbike>getQuadbike(int quadbikeId){
+        return metodosCrud.getQuadbike(quadbikeId);
     }
     
     public Quadbike save(Quadbike quadbike){
@@ -55,9 +55,12 @@ public class ServiceQuadbike {
                     evt.get().setCategory(quadbike.getCategory());
                 }
                 return metodosCrud.save(evt.get());
+            }else{
+                return quadbike;
             }
+        }else{
+            return quadbike;
         }
-        return quadbike;
     }
     
     public boolean deleteQuadbike(int quadbikeid){

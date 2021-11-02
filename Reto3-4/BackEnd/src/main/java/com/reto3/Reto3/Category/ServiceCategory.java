@@ -46,9 +46,12 @@ public class ServiceCategory {
                       evt.get().setName(category.getName());
                   }
                   return mCrud.save(evt.get());
+              }else{
+                  return category;
               }
+          }else{
+               return category;
           }
-          return category;
       }
       
       public boolean deleteCategory(int categoryId){
