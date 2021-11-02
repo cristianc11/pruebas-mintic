@@ -1,9 +1,0 @@
-#messageText:valid,
-textarea:valid{
-    border-color:green;
-}
-
-#messageText:invalid,
-textarea:invalid{
-    border-color:red;
-}
